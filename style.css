@@ -1,0 +1,157 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+    /* background-color: antiquewhite; */
+}
+
+h3 {
+    margin: 5px;
+    /* background-color: aqua; */
+}
+.container{
+    /* background-color: aquamarine; */
+    display: flex;
+}
+.skills {
+    
+  
+    box-sizing: border-box;
+    width: 90%;
+    
+    margin: 60px auto;
+    color: #fff;
+    padding: 30px;
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+    box-shadow: 0 14px 28px rgba(108, 106, 106, 0.25), 0 10px 10px rgba(2, 46, 6, 0.22);
+
+
+}
+.coloumn{
+    float: left;
+  width: 33.33%;
+  padding: 10px;
+  /* height: 300px; */
+}
+
+/* Clear floats after the columns */
+.skills:after {
+    content: "";
+    display: table-row;
+    clear: both;
+  }
+  
+.skills li{
+    /* background-color: aqua; */
+   
+    margin: 20px auto;
+    padding: 10px;
+
+}
+.bar{
+background: #c8d2e0; ;
+display: block;
+height: 10px;
+border: 3px solid rgba(0, 0, 0, 0.3px);
+border-radius: 11px;
+overflow: hidden;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(118, 108, 108, 0.24);
+transition: all 0,3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.bar:hover{
+    box-shadow: 22px 14px 28px rgba(200, 29, 29, 0.12),22px 14px 29px rgba(215, 215, 215, 0.24);
+    color: tomato;
+    
+}
+.bar span{
+    
+    height: 20px;
+    float: left;
+    /* background: linear-gradient(135deg,rgba(222, 0, 140,1),0%, rgba(225,103,103,1)100%); */
+    background: linear-gradient(135deg,rgb(177, 109, 152),0%, rgb(20, 130, 147)100%);
+}
+.bar span:hover{
+    background: linear-gradient(135deg,rgb(177, 109, 152),0%, rgb(4, 140, 72)100%);
+    
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+
+}
+.css{
+    width: 65%;
+    animation: css 3s;
+}
+.php{
+    width: 70%;
+    animation: php 3s;
+}
+.javascript{
+    width: 90%;
+    animation: javascript 3s;
+}
+.row{
+    display: flexbox;
+}
+@keyframes html {
+ 0%{
+    width: 0;
+ }   100%{
+    width: 90%;
+ }
+}
+@keyframes css {
+    0%{
+       width: 0;
+    }   100%{
+       width: 65%;
+    }
+   }
+
+   @keyframes php {
+    0%{
+       width: 0;
+    }   100%{
+       width: 70%;
+    }
+   }
+
+   @keyframes javascript {
+    0%{
+       width: 0;
+    }   100%{
+       width: 90%;
+    }
+   }
+
+
+
+
+   /* Responsive */
+
+   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .coloumn {
+      width: 100%;
+     
+    }
+  }
+  @media (max-width: 600px) {
+    .skills {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      display: grid;
+    }
+  }
