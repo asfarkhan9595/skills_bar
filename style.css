@@ -1,3 +1,6 @@
+:root{
+--yellow:#f9ca24;
+}
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     list-style: none;
@@ -19,6 +22,7 @@ h1 {
 h3 {
     margin: 5px;
     /* background-color: aqua; */
+    text-transform: capitalize;
 }
 .container{
     /* background-color: aquamarine; */
@@ -33,11 +37,14 @@ h3 {
     margin: 60px auto;
     color: #fff;
     padding: 30px;
-    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
-    box-shadow: 0 14px 28px rgba(108, 106, 106, 0.25), 0 10px 10px rgba(2, 46, 6, 0.22);
-
-
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    /* box-shadow: 0 14px 28px rgba(108, 106, 106, 0.25), 0 10px 10px rgba(2, 46, 6, 0.22); */
 }
+#skillscolor{
+    color: #f9ca24;
+}
+
+
 .coloumn{
     float: left;
   width: 33.33%;
@@ -60,7 +67,7 @@ h3 {
 
 }
 .bar{
-background: #c8d2e0; ;
+background: #324c7b88; 
 display: block;
 height: 10px;
 border: 3px solid rgba(0, 0, 0, 0.3px);
@@ -70,20 +77,28 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(118, 108, 108, 0.24);
 transition: all 0,3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .bar:hover{
-    box-shadow: 22px 14px 28px rgba(200, 29, 29, 0.12),22px 14px 29px rgba(215, 215, 215, 0.24);
-    color: tomato;
-    
+    box-shadow: 22px 14px 28px rgba(255, 255, 255, 0.12),22px 14px 29px rgba(42, 42, 42, 0.24);
+    /* background: rgb(235, 12, 12); */
+    background-color: white;
 }
 .bar span{
-    
     height: 20px;
     float: left;
     /* background: linear-gradient(135deg,rgba(222, 0, 140,1),0%, rgba(225,103,103,1)100%); */
-    background: linear-gradient(135deg,rgb(177, 109, 152),0%, rgb(20, 130, 147)100%);
+    background: linear-gradient(135deg,rgb(177, 109, 152),0%, rgb(32, 218, 247)100%);
 }
 .bar span:hover{
-    background: linear-gradient(135deg,rgb(177, 109, 152),0%, rgb(4, 140, 72)100%);
-    
+    /* background: linear-gradient(135deg,rgb(177, 109, 152),0%, rgb(4, 140, 13)100%);
+   */
+   background: #f9ca24;
+ 
+  
+}
+
+
+.python{
+    width: 70%;
+    animation: php 3s;
 }
 .html{
     width: 90%;
@@ -94,17 +109,52 @@ transition: all 0,3s cubic-bezier(0.075, 0.82, 0.165, 1);
     width: 65%;
     animation: css 3s;
 }
-.php{
-    width: 70%;
-    animation: php 3s;
-}
+
 .javascript{
-    width: 90%;
+    width: 70%;
     animation: javascript 3s;
 }
+.react{
+    width: 65%;
+    animation: css 3s;
+}
+.corejava{
+    width: 65%;
+    animation: css 3s;
+}
+.PythonMySQL{
+    width: 85%;
+    animation: html 3s;
+
+}
+.MongoDB{
+    width: 72%;
+    animation: html 3s;
+
+}
+.ML{
+    width: 60%;
+    animation: html 3s;
+
+}
+
+
 .row{
     display: flexbox;
 }
+
+
+
+
+
+
+@keyframes python {
+    0%{
+       width: 0;
+    }   100%{
+       width: 70%;
+    }
+   }
 @keyframes html {
  0%{
     width: 0;
@@ -120,25 +170,51 @@ transition: all 0,3s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
    }
 
-   @keyframes php {
+ 
+
+   @keyframes javascript {
     0%{
        width: 0;
     }   100%{
        width: 70%;
     }
    }
-
-   @keyframes javascript {
+   @keyframes react {
     0%{
        width: 0;
     }   100%{
-       width: 90%;
+       width: 65%;
     }
    }
-
-
-
-
+   
+   @keyframes corejava {
+    0%{
+       width: 0;
+    }   100%{
+       width: 65%;
+    }
+   }
+   @keyframes PythonMySQL {
+    0%{
+       width: 0;
+    }   100%{
+       width: 85%;
+    }
+   }
+   @keyframes MongoDB {
+    0%{
+       width: 0;
+    }   100%{
+       width: 72%;
+    }
+   }
+   @keyframes ML {
+    0%{
+       width: 0;
+    }   100%{
+       width: 60%;
+    }
+   }
    /* Responsive */
 
    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
